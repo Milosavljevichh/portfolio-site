@@ -1,0 +1,312 @@
+
+@font-face {
+    font-family: main;
+    src: url(fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: main;
+}
+
+:root {
+    --darkest-color: #191A19;
+    --grey-color: #414341;
+    --darkest-contrast: #1E5128;
+    --lightest-color: #4E9F3D;
+    --page-padding: 9%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: var(--darkest-color);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 64px;
+}
+
+
+
+
+
+/* PADDING ZA CELU STRANICU */
+header, #hero, #about-container, #projects, #contact, footer {
+    padding: 0px var(--page-padding);
+}
+
+/* HEADER */
+header {
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#logo a {
+    font-size: 1.7rem;
+}
+
+nav ul li a {
+    font-size: 1.3rem;
+}
+
+ul li {
+    transition: all 0.6s;
+}
+
+ul li:hover {
+    transform: translateY(3px);
+}
+
+
+
+
+
+/* HERO */
+#hero {
+    position: relative;
+    height: 85vh;
+    background-image: url(imgs/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #191a1946; /* Change the color and opacity as needed */
+}
+
+#hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    z-index: 1;
+}
+
+#hero-content h1{
+    font-size: 3rem;
+}
+
+#hero-titles h4{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.button {
+    margin-top: 20px;
+    width: 100px;
+    padding: 10px 14px;
+    background-color: var(--lightest-color);
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: var(--darkest-contrast);
+}
+
+
+
+
+
+/* ABOUT */
+
+#about {
+    margin: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--lightest-color);
+    font-size: 2.6rem;
+}
+
+#about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-text {
+    width: 60%;
+    text-align: left;
+    font-size: 1.3rem;
+    color: white;
+}
+
+#about-pics {
+    width: 35%;
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 80px);
+    gap: 20px;
+}
+
+#about-pics img {
+    align-self: center;
+    justify-self: center;
+    width: 80px;
+}
+
+/* PROJECTS */
+
+#projects, article {
+    display: grid;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 95px;
+    height: 300px;
+    gap: 22px;
+    padding: 0 2.5%;
+    background-color: var(--darkest-contrast);
+    width: 78%;
+}
+
+article h3 {
+    color: var(--darkest-color);
+    font-size: 2rem;
+}
+
+article p {
+    font-size: 1.5rem;
+    width: 70%;
+    color: white;
+}
+
+.article-back {
+    width: 60%;
+    justify-self: flex-end;
+}
+
+.article-back p {
+    width: 90%;
+}
+
+
+.project-img {
+    position: absolute;
+}
+
+.front {
+    top: -3%;
+    right: -20%;
+}
+
+.back {
+    top: -3%;
+    left: -54%;
+    z-index: -1;
+}
+
+.project-img img {
+    width: 500px;
+}
+
+article, .project-img img {
+    border-radius: 8px;
+}
+
+/* CONTACT */
+
+#contact-container, .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.contact-link {
+    margin-bottom: 10px;
+    gap: 16px;
+    width: 100%;
+}
+
+.contact-link img {
+    width: 50px;
+    transition: all 0.5s;
+}
+
+.contact-link:hover {
+    cursor: pointer;
+}
+
+.contact-link:hover img{
+    transform: scale(1.1);
+}
+
+#contact-text, #contact-links {
+    width: 47%;
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    margin-top: 90px;
+    height: 7vh;
+    background-color: var(--lightest-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+}
+
+#to-top {
+    background-color:var(--grey-color);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 90px;
+    right: var(--page-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#to-top img {
+    width: 24px;
+}
