@@ -1,0 +1,50 @@
+/* PROJECTS */
+
+#projects {
+    display: grid;
+    article {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        margin-bottom: 95px;
+        height: 300px;
+        gap: 22px;
+        padding: 0 2.5%;
+        background-color: $darkest-contrast;
+        width: 78%;
+        border-radius: 8px;
+        h3 {
+            color: $darkest-color;
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.5rem;
+            width: 70%;
+            color: white;
+        }
+        .project-img {
+            position: absolute;
+            img {
+                width: 500px;
+                border-radius: 8px;
+            }
+        }
+        .front {
+            top: -3%;
+            right: -20%;
+        }
+    }
+    .article-back {
+        width: 60%;
+        justify-self: flex-end;
+        p {
+            width: 90%;
+        }
+        .back {
+            top: -3%;
+            left: -54%;
+            z-index: -1;
+        }
+    }
+}

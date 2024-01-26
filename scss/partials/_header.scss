@@ -1,0 +1,28 @@
+
+/* HEADER */
+header {
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #logo a {
+        font-size: 1.7rem;
+    }
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            li {
+                transition: all 0.6s;
+
+                &:hover {
+                    transform: translateY(3px);
+                }
+                a {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

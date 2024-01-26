@@ -1,0 +1,29 @@
+/* ABOUT */
+
+#about {
+    margin: 80px 0;
+    #about-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #about-text {
+            width: 60%;
+            text-align: left;
+            font-size: 1.3rem;
+            color: white;
+        }
+        #about-pics {
+            width: 35%;
+            display: grid;
+            justify-content: flex-end;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 80px);
+            gap: 20px;
+            img {
+                align-self: center;
+                justify-self: center;
+                width: 80px;
+            }
+        }
+    }
+}

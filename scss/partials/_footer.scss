@@ -1,0 +1,29 @@
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    margin-top: 90px;
+    height: 7vh;
+    background-color: $lightest-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    #to-top {
+            background-color:$grey-color;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 90px;
+            right: $page-padding;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 24px;
+            }
+    }
+}

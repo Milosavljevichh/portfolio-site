@@ -197,35 +197,35 @@ header nav ul li a {
 }
 
 /* CONTACT */
-#contact-container, .contact-link {
+#contact-container {
   display: flex;
   align-items: center;
   gap: 70px;
   color: white;
   font-size: 1.3rem;
 }
-
-.contact-link {
+#contact-container #contact-text, #contact-container #contact-links {
+  width: 47%;
+}
+#contact-container #contact-links .contact-link {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  color: white;
+  font-size: 1.3rem;
   margin-bottom: 10px;
   gap: 16px;
   width: 100%;
 }
-
-.contact-link img {
+#contact-container #contact-links .contact-link:hover {
+  cursor: pointer;
+}
+#contact-container #contact-links .contact-link img {
   width: 50px;
   transition: all 0.5s;
 }
-
-.contact-link:hover {
-  cursor: pointer;
-}
-
-.contact-link:hover img {
-  transform: scale(1.1);
-}
-
-#contact-text, #contact-links {
-  width: 47%;
+#contact-container #contact-links .contact-link img:hover {
+  transform: scale(1.15);
 }
 
 /* FOOTER */
@@ -240,8 +240,7 @@ footer {
   color: white;
   font-weight: 700;
 }
-
-#to-top {
+footer #to-top {
   background-color: #414341;
   width: 48px;
   height: 48px;
@@ -253,7 +252,6 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
-#to-top img {
+footer #to-top img {
   width: 24px;
 }/*# sourceMappingURL=style.css.map */
