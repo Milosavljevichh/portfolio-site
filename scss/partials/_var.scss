@@ -1,0 +1,39 @@
+$darkest-color: #191A19;
+$grey-color: #414341;
+$darkest-contrast: #1E5128;
+$lightest-color: #4E9F3D;
+$page-padding: 9%;
+
+@font-face {
+    font-family: main;
+    src: url(../../fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: main;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  
+body {
+    background-color: $darkest-color;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 64px;
+}
+
