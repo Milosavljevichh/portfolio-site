@@ -17,19 +17,11 @@ footer {
             height: 48px;
             border-radius: 50%;
             position: absolute;
-            bottom: 90px;
+            bottom: 10vh;
             right: $page-padding;
             display: flex;
             align-items: center;
             justify-content: center;
-            @include tablet {
-                bottom: 110px;
-                right: 46.5%;
-            }
-            @include phone {
-                bottom: 90px;
-                right: 43%;
-            }
             img {
                 width: 24px;
             }

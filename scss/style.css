@@ -401,23 +401,11 @@ footer #to-top {
   height: 48px;
   border-radius: 50%;
   position: absolute;
-  bottom: 90px;
+  bottom: 10vh;
   right: 9%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@media (max-width: 1024px) {
-  footer #to-top {
-    bottom: 110px;
-    right: 46.5%;
-  }
-}
-@media (max-width: 726px) {
-  footer #to-top {
-    bottom: 90px;
-    right: 43%;
-  }
 }
 footer #to-top img {
   width: 24px;
