@@ -18,11 +18,22 @@
             justify-content: flex-start;
             margin-bottom: 200px;
         }
+        @include phone {
+            justify-self: center;
+            margin-bottom: 300px;
+        }
+        @include smaller {
+            margin-bottom: 250px;
+        }
         h3 {
             color: $darkest-color;
             font-size: 2rem;
             @include tablet {
                 margin-top: 20px;
+            }
+            @include phone {
+                text-align: center;
+                font-size: 1.4rem;
             }
         }
         p {
@@ -32,6 +43,10 @@
             @include tablet {
                 width: 100%;
             }
+            @include phone {
+                font-size: 1.1rem;
+                text-align: center;
+            }
         }
         .project-img {
             position: absolute;
@@ -39,13 +54,20 @@
             right: -20%;
             @include tablet {
                 top: 250px;
-                left: 50%;
+                left: 60%;
+            }
+            @include phone {
+                width: 100%;
+                left: 7.5%;
             }
             img {
                 width: 500px;
                 border-radius: 8px;
                 @include tablet {
                     width: 350px;
+                }
+                @include phone {
+                    width: 85%;
                 }
             }
         }

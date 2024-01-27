@@ -1,0 +1,23 @@
+$breakpoints: (
+    "tablet": 1024px,
+    "phone": 726px,
+    "smaller-phone": 657px,
+);
+
+@mixin tablet {
+    @media (max-width: map-get($breakpoints, 'tablet')) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: map-get($breakpoints, 'phone')) {
+        @content;
+    }
+}
+
+@mixin smaller {
+    @media (max-width: map-get($breakpoints, 'smaller-phone')) {
+        @content;
+    }
+}

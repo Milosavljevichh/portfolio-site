@@ -7,12 +7,18 @@ header {
     align-items: center;
     #logo a {
         font-size: 1.7rem;
+        @include phone {
+            font-size: 1.05rem;
+        }
     }
     nav {
         ul {
             display: flex;
             align-items: center;
             gap: 30px;
+            @include phone {
+                gap: 10px;
+            }
             li {
                 transition: all 0.6s;
 
@@ -21,6 +27,9 @@ header {
                 }
                 a {
                     font-size: 1.3rem;
+                    @include phone {
+                        font-size: 1rem;
+                    }
                 }
             }
         }

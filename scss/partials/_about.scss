@@ -36,6 +36,12 @@
                 grid-template-rows: repeat(3, 120px);
                 width: 70%;
             }
+            @include phone {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                width: 90%;
+                justify-content: center;
+            }
             img {
                 align-self: center;
                 justify-self: center;
@@ -43,6 +49,10 @@
                 
             @include tablet {
                 width: 120px;
+            }
+
+            @include phone {
+                width: 100px;
             }
             }
         }

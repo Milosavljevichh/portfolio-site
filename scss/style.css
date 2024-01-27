@@ -33,6 +33,11 @@ img {
 header, #hero, #about-container, #projects, #contact, footer {
   padding: 0px 9%;
 }
+@media (max-width: 726px) {
+  header, #hero, #about-container, #projects, #contact, footer {
+    padding: 0 5%;
+  }
+}
 
 .section-title {
   text-align: center;
@@ -51,10 +56,20 @@ header {
 header #logo a {
   font-size: 1.7rem;
 }
+@media (max-width: 726px) {
+  header #logo a {
+    font-size: 1.05rem;
+  }
+}
 header nav ul {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+@media (max-width: 726px) {
+  header nav ul {
+    gap: 10px;
+  }
 }
 header nav ul li {
   transition: all 0.6s;
@@ -64,6 +79,11 @@ header nav ul li:hover {
 }
 header nav ul li a {
   font-size: 1.3rem;
+}
+@media (max-width: 726px) {
+  header nav ul li a {
+    font-size: 1rem;
+  }
 }
 
 /* HERO */
@@ -108,6 +128,11 @@ header nav ul li a {
     font-size: 3.3rem;
   }
 }
+@media (max-width: 726px) {
+  #hero #hero-content h1 {
+    font-size: 3rem;
+  }
+}
 #hero #hero-content .button {
   margin-top: 20px;
   width: 100px;
@@ -124,6 +149,13 @@ header nav ul li a {
     font-size: 1.9rem;
     width: 160px;
     padding: 16px 20px;
+  }
+}
+@media (max-width: 726px) {
+  #hero #hero-content .button {
+    width: 120px;
+    font-size: 1.2rem;
+    padding: 12px 16px;
   }
 }
 #hero #hero-content .button:hover {
@@ -181,6 +213,14 @@ header nav ul li a {
     width: 70%;
   }
 }
+@media (max-width: 726px) {
+  #about #about-container #about-pics {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 90%;
+    justify-content: center;
+  }
+}
 #about #about-container #about-pics img {
   align-self: center;
   justify-self: center;
@@ -189,6 +229,11 @@ header nav ul li a {
 @media (max-width: 1024px) {
   #about #about-container #about-pics img {
     width: 120px;
+  }
+}
+@media (max-width: 726px) {
+  #about #about-container #about-pics img {
+    width: 100px;
   }
 }
 
@@ -215,6 +260,17 @@ header nav ul li a {
     margin-bottom: 200px;
   }
 }
+@media (max-width: 726px) {
+  #projects article {
+    justify-self: center;
+    margin-bottom: 300px;
+  }
+}
+@media (max-width: 657px) {
+  #projects article {
+    margin-bottom: 250px;
+  }
+}
 #projects article h3 {
   color: #191A19;
   font-size: 2rem;
@@ -222,6 +278,12 @@ header nav ul li a {
 @media (max-width: 1024px) {
   #projects article h3 {
     margin-top: 20px;
+  }
+}
+@media (max-width: 726px) {
+  #projects article h3 {
+    text-align: center;
+    font-size: 1.4rem;
   }
 }
 #projects article p {
@@ -234,6 +296,12 @@ header nav ul li a {
     width: 100%;
   }
 }
+@media (max-width: 726px) {
+  #projects article p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
 #projects article .project-img {
   position: absolute;
   top: -3%;
@@ -242,7 +310,13 @@ header nav ul li a {
 @media (max-width: 1024px) {
   #projects article .project-img {
     top: 250px;
-    left: 50%;
+    left: 60%;
+  }
+}
+@media (max-width: 726px) {
+  #projects article .project-img {
+    width: 100%;
+    left: 7.5%;
   }
 }
 #projects article .project-img img {
@@ -254,6 +328,11 @@ header nav ul li a {
     width: 350px;
   }
 }
+@media (max-width: 726px) {
+  #projects article .project-img img {
+    width: 85%;
+  }
+}
 
 /* CONTACT */
 #contact-container {
@@ -263,8 +342,20 @@ header nav ul li a {
   color: white;
   font-size: 1.3rem;
 }
+@media (max-width: 726px) {
+  #contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 #contact-container #contact-text, #contact-container #contact-links {
   width: 47%;
+}
+@media (max-width: 726px) {
+  #contact-container #contact-text, #contact-container #contact-links {
+    text-align: center;
+    width: 100%;
+  }
 }
 #contact-container #contact-links .contact-link {
   display: flex;
@@ -275,6 +366,11 @@ header nav ul li a {
   margin-bottom: 10px;
   gap: 16px;
   width: 100%;
+}
+@media (max-width: 726px) {
+  #contact-container #contact-links .contact-link {
+    flex-direction: column;
+  }
 }
 #contact-container #contact-links .contact-link:hover {
   cursor: pointer;
@@ -310,6 +406,18 @@ footer #to-top {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 1024px) {
+  footer #to-top {
+    bottom: 110px;
+    right: 46.5%;
+  }
+}
+@media (max-width: 726px) {
+  footer #to-top {
+    bottom: 90px;
+    right: 43%;
+  }
 }
 footer #to-top img {
   width: 24px;
