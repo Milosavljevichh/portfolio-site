@@ -32,7 +32,7 @@
         h1 {
             font-size: 3rem;    
         @include tablet {
-            font-size: 3.8rem;
+            font-size: 3.3rem;
         }
         }
         .button {
@@ -60,7 +60,7 @@
                 font-weight: 300;
                 
             @include tablet {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             }
         }

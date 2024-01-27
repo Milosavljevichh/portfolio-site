@@ -14,37 +14,47 @@
         background-color: $darkest-contrast;
         width: 78%;
         border-radius: 8px;
+        @include tablet {
+            justify-content: flex-start;
+            margin-bottom: 200px;
+        }
         h3 {
             color: $darkest-color;
             font-size: 2rem;
+            @include tablet {
+                margin-top: 20px;
+            }
         }
         p {
             font-size: 1.5rem;
             width: 70%;
             color: white;
+            @include tablet {
+                width: 100%;
+            }
         }
         .project-img {
             position: absolute;
+            top: -3%;
+            right: -20%;
+            @include tablet {
+                top: 250px;
+                left: 50%;
+            }
             img {
                 width: 500px;
                 border-radius: 8px;
+                @include tablet {
+                    width: 350px;
+                }
             }
         }
-        .front {
-            top: -3%;
-            right: -20%;
-        }
     }
-    .article-back {
-        width: 60%;
-        justify-self: flex-end;
-        p {
-            width: 90%;
-        }
-        .back {
-            top: -3%;
-            left: -54%;
-            z-index: -1;
-        }
-    }
+    // .article-back {
+    //     width: 60%;
+    //     justify-self: flex-end;
+    //     p {
+    //         width: 90%;
+    //     }
+    // }
 }

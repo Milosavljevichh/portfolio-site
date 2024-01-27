@@ -105,7 +105,7 @@ header nav ul li a {
 }
 @media (max-width: 1024px) {
   #hero #hero-content h1 {
-    font-size: 3.8rem;
+    font-size: 3.3rem;
   }
 }
 #hero #hero-content .button {
@@ -135,7 +135,7 @@ header nav ul li a {
 }
 @media (max-width: 1024px) {
   #hero #hero-content #hero-titles h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -209,37 +209,50 @@ header nav ul li a {
   width: 78%;
   border-radius: 8px;
 }
+@media (max-width: 1024px) {
+  #projects article {
+    justify-content: flex-start;
+    margin-bottom: 200px;
+  }
+}
 #projects article h3 {
   color: #191A19;
   font-size: 2rem;
+}
+@media (max-width: 1024px) {
+  #projects article h3 {
+    margin-top: 20px;
+  }
 }
 #projects article p {
   font-size: 1.5rem;
   width: 70%;
   color: white;
 }
+@media (max-width: 1024px) {
+  #projects article p {
+    width: 100%;
+  }
+}
 #projects article .project-img {
   position: absolute;
+  top: -3%;
+  right: -20%;
+}
+@media (max-width: 1024px) {
+  #projects article .project-img {
+    top: 250px;
+    left: 50%;
+  }
 }
 #projects article .project-img img {
   width: 500px;
   border-radius: 8px;
 }
-#projects article .front {
-  top: -3%;
-  right: -20%;
-}
-#projects .article-back {
-  width: 60%;
-  justify-self: flex-end;
-}
-#projects .article-back p {
-  width: 90%;
-}
-#projects .article-back .back {
-  top: -3%;
-  left: -54%;
-  z-index: -1;
+@media (max-width: 1024px) {
+  #projects article .project-img img {
+    width: 350px;
+  }
 }
 
 /* CONTACT */
