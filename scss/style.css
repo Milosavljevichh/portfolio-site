@@ -78,6 +78,11 @@ header nav ul li a {
   align-items: center;
   justify-content: flex-start;
 }
+@media (max-width: 1024px) {
+  #hero {
+    height: 90vh;
+  }
+}
 #hero::before {
   content: "";
   display: block;
@@ -98,6 +103,11 @@ header nav ul li a {
 #hero #hero-content h1 {
   font-size: 3rem;
 }
+@media (max-width: 1024px) {
+  #hero #hero-content h1 {
+    font-size: 3.8rem;
+  }
+}
 #hero #hero-content .button {
   margin-top: 20px;
   width: 100px;
@@ -109,12 +119,24 @@ header nav ul li a {
   font-weight: 500;
   transition: all 0.5s;
 }
+@media (max-width: 1024px) {
+  #hero #hero-content .button {
+    font-size: 1.9rem;
+    width: 160px;
+    padding: 16px 20px;
+  }
+}
 #hero #hero-content .button:hover {
   background-color: #1E5128;
 }
 #hero #hero-content #hero-titles h4 {
   font-size: 1.3rem;
   font-weight: 300;
+}
+@media (max-width: 1024px) {
+  #hero #hero-content #hero-titles h4 {
+    font-size: 2rem;
+  }
 }
 
 /* ABOUT */
@@ -126,11 +148,23 @@ header nav ul li a {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  #about #about-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 #about #about-container #about-text {
   width: 60%;
   text-align: left;
   font-size: 1.3rem;
   color: white;
+}
+@media (max-width: 1024px) {
+  #about #about-container #about-text {
+    text-align: center;
+    width: 100%;
+  }
 }
 #about #about-container #about-pics {
   width: 35%;
@@ -140,10 +174,22 @@ header nav ul li a {
   grid-template-rows: repeat(3, 80px);
   gap: 20px;
 }
+@media (max-width: 1024px) {
+  #about #about-container #about-pics {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 120px);
+    width: 70%;
+  }
+}
 #about #about-container #about-pics img {
   align-self: center;
   justify-self: center;
   width: 80px;
+}
+@media (max-width: 1024px) {
+  #about #about-container #about-pics img {
+    width: 120px;
+  }
 }
 
 /* PROJECTS */

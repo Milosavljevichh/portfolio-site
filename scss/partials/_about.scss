@@ -6,11 +6,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
+        @include tablet {
+            flex-direction: column;
+            gap: 40px;
+        }
         #about-text {
             width: 60%;
             text-align: left;
             font-size: 1.3rem;
             color: white;
+            
+            @include tablet {
+                text-align: center;
+                width: 100%;
+            }
         }
         #about-pics {
             width: 35%;
@@ -19,10 +29,20 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 80px);
             gap: 20px;
+            
+            @include tablet {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 120px);
+                width: 70%;
+            }
             img {
                 align-self: center;
                 justify-self: center;
                 width: 80px;
+                
+            @include tablet {
+                width: 120px;
+            }
             }
         }
     }
