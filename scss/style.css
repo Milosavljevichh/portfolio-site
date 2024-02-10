@@ -419,16 +419,29 @@ header nav ul li a {
   border-radius: 12px;
   font-size: 1.3rem;
 }
+@media (max-width: 726px) {
+  #form form {
+    padding: 5%;
+  }
+}
 #form form #top-form {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
 }
-#form form #top-form #left-form {
+@media (max-width: 726px) {
+  #form form #top-form {
+    flex-direction: column;
+  }
+}
+#form form #top-form #left-form, #form form #top-form #right-form {
   width: 47%;
 }
-#form form #top-form #right-form {
-  width: 47%;
+@media (max-width: 726px) {
+  #form form #top-form #left-form, #form form #top-form #right-form {
+    width: 100%;
+  }
 }
 #form form .part {
   display: flex;

@@ -7,15 +7,22 @@
         border: $darkest-contrast solid 3px;
         border-radius: 12px;
         font-size: 1.3rem;
+        @include phone {
+            padding: 5%;
+        }
         #top-form {
             display: flex;
+            align-items: center;
             justify-content: space-between;
             margin-bottom: 25px;
-            #left-form {
-                width: 47%;
+            @include phone {
+                flex-direction: column;
             }
-            #right-form {
+            #left-form, #right-form {
                 width: 47%;
+                @include phone {
+                    width: 100%;
+                }
             }
         }
         .part {
