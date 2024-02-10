@@ -4,9 +4,10 @@
 footer {
     position: relative;
     margin-top: 90px;
-    height: 7vh;
+    height: 12vh;
     background-color: $lightest-color;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
@@ -17,7 +18,7 @@ footer {
             height: 48px;
             border-radius: 50%;
             position: absolute;
-            bottom: 10vh;
+            bottom: 15vh;
             right: $page-padding;
             display: flex;
             align-items: center;
@@ -25,5 +26,8 @@ footer {
             img {
                 width: 24px;
             }
+    }
+    img {
+        width: 36px;
     }
 }

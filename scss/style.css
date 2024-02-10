@@ -526,9 +526,10 @@ header nav ul li a {
 footer {
   position: relative;
   margin-top: 90px;
-  height: 7vh;
+  height: 12vh;
   background-color: #4E9F3D;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
@@ -540,7 +541,7 @@ footer #to-top {
   height: 48px;
   border-radius: 50%;
   position: absolute;
-  bottom: 10vh;
+  bottom: 15vh;
   right: 9%;
   display: flex;
   align-items: center;
@@ -548,4 +549,7 @@ footer #to-top {
 }
 footer #to-top img {
   width: 24px;
+}
+footer img {
+  width: 36px;
 }/*# sourceMappingURL=style.css.map */
