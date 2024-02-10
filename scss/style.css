@@ -30,11 +30,11 @@ img {
 }
 
 /* PADDING ZA CELU STRANICU */
-header, #hero, #about-container, #projects, #contact, footer {
+header, #hero, #about-container, #me-container, #projects, #contact, footer {
   padding: 0px 9%;
 }
 @media (max-width: 726px) {
-  header, #hero, #about-container, #projects, #contact, footer {
+  header, #hero, #about-container, #me-container, #projects, #contact, footer {
     padding: 0 5%;
   }
 }
@@ -235,6 +235,31 @@ header nav ul li a {
   #about #about-container #about-pics img {
     width: 100px;
   }
+}
+
+#me-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+#me-container #me-pic {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#me-container #me-pic img {
+  width: 90%;
+  border-radius: 16px;
+  border: #4E9F3D 2.5px solid;
+}
+#me-container #me-text {
+  width: 57%;
+  color: #fff;
+  font-size: 1.65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* PROJECTS */
