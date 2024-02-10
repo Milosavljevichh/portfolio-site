@@ -1,5 +1,5 @@
 /* PADDING ZA CELU STRANICU */
-header, #hero, #about-container, #me-container, #projects, #contact, footer {
+header, #hero, #about-container, #me-container, #projects, #contact, #form, footer {
     padding: 0px $page-padding;
     @include phone {
         padding: 0 5%;

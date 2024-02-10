@@ -30,11 +30,11 @@ img {
 }
 
 /* PADDING ZA CELU STRANICU */
-header, #hero, #about-container, #me-container, #projects, #contact, footer {
+header, #hero, #about-container, #me-container, #projects, #contact, #form, footer {
   padding: 0px 9%;
 }
 @media (max-width: 726px) {
-  header, #hero, #about-container, #me-container, #projects, #contact, footer {
+  header, #hero, #about-container, #me-container, #projects, #contact, #form, footer {
     padding: 0 5%;
   }
 }
@@ -406,6 +406,63 @@ header nav ul li a {
 }
 #contact-container #contact-links .contact-link img:hover {
   transform: scale(1.15);
+}
+
+#form {
+  margin: 80px 0;
+}
+#form form {
+  padding: 3%;
+  color: #fff;
+  background-color: rgba(170, 170, 170, 0.3882352941);
+  border: #1E5128 solid 3px;
+  border-radius: 12px;
+  font-size: 1.3rem;
+}
+#form form #top-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+#form form #top-form #left-form {
+  width: 47%;
+}
+#form form #top-form #right-form {
+  width: 47%;
+}
+#form form .part {
+  display: flex;
+  flex-direction: column;
+}
+#form form input, #form form textarea {
+  margin: 6px 0;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7725490196);
+  height: 40px;
+}
+#form form #proposal {
+  height: 150px;
+  resize: none;
+}
+#form form #btns {
+  display: flex;
+  justify-content: space-between;
+}
+#form form .btn {
+  margin: 45px 10px 0 0;
+  width: 22%;
+  background-color: #4E9F3D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* FOOTER */
