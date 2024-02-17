@@ -3,8 +3,8 @@
     form {
         padding: 3%;
         color: #fff;
-        background-color: #aaaaaa63;
-        border: $darkest-contrast solid 3px;
+        background-color: #fdfdfd14;
+        border: $lightest-color solid 3px;
         border-radius: 12px;
         font-size: 1.3rem;
         @include phone {
@@ -31,10 +31,16 @@
         }
         input, textarea {
             margin: 6px 0;
-            border-radius: 4px;
+            border-radius: 8px;
             border: none;
             background-color: #ffffffc5;
+            border: #ffffff00 solid 3.5px;
             height: 40px;
+            transition: all 0.75s;
+            outline: none;
+            &:focus{
+                border: $lightest-color solid 3.5px;
+            }
         }
         #proposal {
             height: 150px;

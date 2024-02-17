@@ -194,7 +194,7 @@ header nav ul li a {
 }
 @media (max-width: 1024px) {
   #about #about-container #about-text {
-    text-align: center;
+    text-align: justify;
     width: 100%;
   }
 }
@@ -302,7 +302,7 @@ header nav ul li a {
 @media (max-width: 1024px) {
   #me-container #me-text {
     width: 100%;
-    text-align: center;
+    text-align: justify;
   }
 }
 
@@ -310,7 +310,13 @@ header nav ul li a {
 #projects {
   display: grid;
 }
-#projects article {
+@media (max-width: 726px) {
+  #projects a {
+    display: flex;
+    justify-content: center;
+  }
+}
+#projects a article {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -324,81 +330,81 @@ header nav ul li a {
   border-radius: 8px;
 }
 @media (max-width: 1024px) {
-  #projects article {
+  #projects a article {
     justify-content: flex-start;
     margin-bottom: 200px;
   }
 }
 @media (max-width: 726px) {
-  #projects article {
+  #projects a article {
     justify-self: center;
     margin-bottom: 300px;
   }
 }
 @media (max-width: 657px) {
-  #projects article {
+  #projects a article {
     margin-bottom: 250px;
   }
 }
-#projects article h3 {
+#projects a article h3 {
   color: #191A19;
   font-size: 2rem;
 }
 @media (max-width: 1024px) {
-  #projects article h3 {
+  #projects a article h3 {
     margin-top: 20px;
   }
 }
 @media (max-width: 726px) {
-  #projects article h3 {
+  #projects a article h3 {
     text-align: center;
     font-size: 1.4rem;
   }
 }
-#projects article p {
+#projects a article p {
   font-size: 1.5rem;
   width: 70%;
   color: white;
 }
 @media (max-width: 1024px) {
-  #projects article p {
+  #projects a article p {
     width: 100%;
   }
 }
 @media (max-width: 726px) {
-  #projects article p {
+  #projects a article p {
     font-size: 1.1rem;
     text-align: center;
   }
 }
-#projects article .project-img {
+#projects a article .project-img {
   position: absolute;
   top: -3%;
   right: -20%;
 }
 @media (max-width: 1024px) {
-  #projects article .project-img {
+  #projects a article .project-img {
     top: 250px;
     left: 60%;
   }
 }
 @media (max-width: 726px) {
-  #projects article .project-img {
+  #projects a article .project-img {
     width: 100%;
     left: 7.5%;
   }
 }
-#projects article .project-img img {
+#projects a article .project-img img {
   width: 500px;
   border-radius: 8px;
 }
 @media (max-width: 1024px) {
-  #projects article .project-img img {
+  #projects a article .project-img img {
     width: 350px;
   }
 }
 @media (max-width: 726px) {
-  #projects article .project-img img {
+  #projects a article .project-img img {
     width: 85%;
   }
 }
@@ -458,8 +464,8 @@ header nav ul li a {
 #form form {
   padding: 3%;
   color: #fff;
-  background-color: rgba(170, 170, 170, 0.3882352941);
-  border: #1E5128 solid 3px;
+  background-color: rgba(253, 253, 253, 0.0784313725);
+  border: #4E9F3D solid 3px;
   border-radius: 12px;
   font-size: 1.3rem;
 }
@@ -493,10 +499,16 @@ header nav ul li a {
 }
 #form form input, #form form textarea {
   margin: 6px 0;
-  border-radius: 4px;
+  border-radius: 8px;
   border: none;
   background-color: rgba(255, 255, 255, 0.7725490196);
+  border: rgba(255, 255, 255, 0) solid 3.5px;
   height: 40px;
+  transition: all 0.75s;
+  outline: none;
+}
+#form form input:focus, #form form textarea:focus {
+  border: #4E9F3D solid 3.5px;
 }
 #form form #proposal {
   height: 150px;
