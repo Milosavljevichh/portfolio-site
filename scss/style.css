@@ -319,6 +319,28 @@ header nav ul li a {
   }
 }
 
+#logo-bar {
+  width: 100%;
+  background-color: #414341;
+  border: 4px solid #4E9F3D;
+  border-right: none;
+  border-left: none;
+  padding: 30px 0;
+  margin-bottom: 80px;
+}
+#logo-bar div {
+  display: flex;
+  justify-content: space-around;
+}
+#logo-bar div img {
+  width: 200px;
+}
+@media (max-width: 726px) {
+  #logo-bar div img {
+    width: 100px;
+  }
+}
+
 /* PROJECTS */
 #projects {
   display: grid;
