@@ -411,7 +411,6 @@ header nav ul li a {
 
 /* CONTACT */
 #contact-container {
-  display: flex;
   align-items: center;
   gap: 70px;
   color: white;
@@ -423,24 +422,35 @@ header nav ul li a {
     gap: 20px;
   }
 }
-#contact-container #contact-text, #contact-container #contact-links {
-  width: 47%;
-}
 @media (max-width: 726px) {
   #contact-container #contact-text, #contact-container #contact-links {
     text-align: center;
     width: 100%;
   }
 }
+#contact-container #contact-text {
+  text-align: center;
+}
+#contact-container #contact-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+@media (max-width: 1024px) {
+  #contact-container #contact-links {
+    justify-content: space-between;
+  }
+}
 #contact-container #contact-links .contact-link {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 70px;
   color: white;
   font-size: 1.3rem;
   margin-bottom: 10px;
   gap: 16px;
-  width: 100%;
+  width: 30%;
 }
 @media (max-width: 726px) {
   #contact-container #contact-links .contact-link {
@@ -470,6 +480,11 @@ header nav ul li a {
   border: #4E9F3D solid 3px;
   border-radius: 12px;
   font-size: 1.3rem;
+}
+@media (max-width: 1024px) {
+  #form form {
+    width: 80%;
+  }
 }
 @media (max-width: 726px) {
   #form form {
@@ -573,4 +588,10 @@ footer #to-top img {
 }
 footer img {
   width: 36px;
+}
+footer p {
+  margin-top: 10px;
+}
+footer #social {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

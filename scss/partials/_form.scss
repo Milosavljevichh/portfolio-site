@@ -9,6 +9,9 @@
         border: $lightest-color solid 3px;
         border-radius: 12px;
         font-size: 1.3rem;
+        @include tablet {
+            width: 80%;
+        }
         @include phone {
             padding: 5%;
             width: 80%;

@@ -1,7 +1,7 @@
 /* CONTACT */
 
 #contact-container {
-    display: flex;
+    // display: flex;
     align-items: center;
     gap: 70px;
     color: white;
@@ -11,22 +11,32 @@
         gap: 20px;
     }
     #contact-text, #contact-links {
-        width: 47%;
+        // width: 47%;
         @include phone {
             text-align: center;
             width: 100%;
         }
     }
+    #contact-text {
+        text-align: center;
+    }
     #contact-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        @include tablet {
+            justify-content: space-between;
+        }
             .contact-link {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 70px;
             color: white;
             font-size: 1.3rem;
             margin-bottom: 10px;
             gap: 16px;
-            width: 100%;
+            width: 30%;
             @include phone {
                 flex-direction: column;
                 
