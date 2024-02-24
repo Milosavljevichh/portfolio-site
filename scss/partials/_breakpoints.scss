@@ -4,6 +4,12 @@ $breakpoints: (
     "smaller-phone": 657px,
 );
 
+@mixin projects-text {
+    @media (max-width: 1410px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (max-width: map-get($breakpoints, 'tablet')) {
         @content;

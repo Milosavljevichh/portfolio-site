@@ -1,7 +1,7 @@
 
 /* HEADER */
 header {
-    height: 7vh;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +9,15 @@ header {
         font-size: 1.7rem;
         @include phone {
             font-size: 1.05rem;
+        }
+    }
+    #logo img {
+        width: 50px;
+        @include tablet {
+            width: 70px;
+        }
+        @include phone {
+            width: 45px;
         }
     }
     nav {

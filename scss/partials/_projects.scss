@@ -45,6 +45,9 @@
                 font-size: 1.5rem;
                 width: 70%;
                 color: white;
+                @include projects-text {
+                    width: 50%;
+                }
                 @include tablet {
                     width: 100%;
                 }

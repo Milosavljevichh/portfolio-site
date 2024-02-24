@@ -48,7 +48,7 @@ header, #hero, #about-container, #me-container, #projects, #contact, #form, foot
 
 /* HEADER */
 header {
-  height: 7vh;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,6 +59,19 @@ header #logo a {
 @media (max-width: 726px) {
   header #logo a {
     font-size: 1.05rem;
+  }
+}
+header #logo img {
+  width: 50px;
+}
+@media (max-width: 1024px) {
+  header #logo img {
+    width: 70px;
+  }
+}
+@media (max-width: 726px) {
+  header #logo img {
+    width: 45px;
   }
 }
 header nav ul {
@@ -365,6 +378,11 @@ header nav ul li a {
   font-size: 1.5rem;
   width: 70%;
   color: white;
+}
+@media (max-width: 1410px) {
+  #projects a article p {
+    width: 50%;
+  }
 }
 @media (max-width: 1024px) {
   #projects a article p {
