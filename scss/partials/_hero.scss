@@ -3,10 +3,13 @@
 #hero {
     position: relative;
     height: 85vh;
-    background-image: url(../imgs/bg-hero.jpg);
+    background-color: #0f0f0f;
+    background-image: url(../imgs/vecto.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    // background-size: cover;
+    background-size: contain;
+    // background-position: bottom;
+    background-position: right;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -29,9 +32,15 @@
         gap: 10px;
         color: white;
         z-index: 1;
+        @include tablet {
+            background-color: #414341c9;
+            padding: 20px;
+            border-radius: 15px;
+            
+        }
         h1 {
             font-size: 3rem;    
-        @include tablet {
+            @include tablet {
             font-size: 3.3rem;
         }
         @include phone {

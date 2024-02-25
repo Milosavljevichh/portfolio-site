@@ -103,10 +103,11 @@ header nav ul li a {
 #hero {
   position: relative;
   height: 85vh;
-  background-image: url(../imgs/bg-hero.jpg);
+  background-color: #0f0f0f;
+  background-image: url(../imgs/vecto.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-size: contain;
+  background-position: right;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -132,6 +133,13 @@ header nav ul li a {
   gap: 10px;
   color: white;
   z-index: 1;
+}
+@media (max-width: 1024px) {
+  #hero #hero-content {
+    background-color: rgba(65, 67, 65, 0.7882352941);
+    padding: 20px;
+    border-radius: 15px;
+  }
 }
 #hero #hero-content h1 {
   font-size: 3rem;
