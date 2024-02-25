@@ -42,17 +42,22 @@
                 width: 90%;
                 justify-content: center;
             }
+            .grow {
+                transform: scale(1.2);
+                filter: drop-shadow(1.5px 6px 2px $lightest-color);
+            }
             img {
                 align-self: center;
                 justify-self: center;
                 width: 80px;
+                transition: all 0.5s;
                 
             @include tablet {
                 width: 120px;
             }
 
             @include phone {
-                width: 100px;
+                width: 90px;
             }
             }
         }

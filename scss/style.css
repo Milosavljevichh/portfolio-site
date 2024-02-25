@@ -242,10 +242,15 @@ header nav ul li a {
     justify-content: center;
   }
 }
+#about #about-container #about-pics .grow {
+  transform: scale(1.2);
+  filter: drop-shadow(1.5px 6px 2px #4E9F3D);
+}
 #about #about-container #about-pics img {
   align-self: center;
   justify-self: center;
   width: 80px;
+  transition: all 0.5s;
 }
 @media (max-width: 1024px) {
   #about #about-container #about-pics img {
@@ -254,7 +259,7 @@ header nav ul li a {
 }
 @media (max-width: 726px) {
   #about #about-container #about-pics img {
-    width: 100px;
+    width: 90px;
   }
 }
 
