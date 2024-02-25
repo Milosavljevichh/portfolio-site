@@ -48,6 +48,7 @@
             box-shadow: none;
             backdrop-filter: none;
             -webkit-backdrop-filter: none;
+            padding: 5px;
         }
         @include fold {
             padding: 0;

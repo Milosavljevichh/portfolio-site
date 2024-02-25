@@ -162,6 +162,7 @@ header nav ul li a {
     box-shadow: none;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
+    padding: 5px;
   }
 }
 @media (max-width: 281px) {
