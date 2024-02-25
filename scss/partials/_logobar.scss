@@ -1,19 +1,53 @@
 #logo-bar {
-    width: 100%;
-    background-color: $grey-color;
-    border: 4px solid $lightest-color;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #0a0a0aa9;
+    border: 2px solid $lightest-color;
     border-right: none;
     border-left: none;
-    padding: 30px 0;
+    border-radius: 18px;
+    padding: 15px 0;
     margin-bottom: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    
     div {
         display: flex;
         justify-content: space-around;
+        align-items: center;
         img {
             width: 200px;
+            animation: looping 3s infinite linear;
+            margin: 0 50px;
             @include phone {
                 width: 100px;
             }
         }
+    }
+}
+#logo-bar::before,
+#logo-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 180px;
+    height: 200px;
+    z-index: 2;
+}
+#logo-bar::before {
+    background: linear-gradient(266deg, rgba(10,10,10,0) 0%, rgba(8,9,8,1) 95%);
+}
+#logo-bar::after {
+    right: 0;
+background: linear-gradient(100deg, rgba(10,10,10,0) 0%, rgba(8,9,8,1) 95%);
+}
+@keyframes looping {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-300%)
     }
 }
