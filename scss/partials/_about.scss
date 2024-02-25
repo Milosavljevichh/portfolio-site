@@ -59,6 +59,9 @@
             @include phone {
                 width: 90px;
             }
+            @include fold {
+                width: 75px;
+            }
             }
         }
     }

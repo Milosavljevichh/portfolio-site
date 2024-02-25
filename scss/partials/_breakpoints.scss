@@ -2,6 +2,7 @@ $breakpoints: (
     "tablet": 1024px,
     "phone": 726px,
     "smaller-phone": 657px,
+    "fold": 281px,
 );
 
 @mixin projects-text {
@@ -18,6 +19,12 @@ $breakpoints: (
 
 @mixin phone {
     @media (max-width: map-get($breakpoints, 'phone')) {
+        @content;
+    }
+}
+
+@mixin fold {
+    @media (max-width: map-get($breakpoints, 'fold')) {
         @content;
     }
 }

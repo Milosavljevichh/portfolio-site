@@ -98,6 +98,11 @@ header nav ul li a {
     font-size: 1rem;
   }
 }
+@media (max-width: 281px) {
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+}
 
 /* HERO */
 #hero {
@@ -115,6 +120,7 @@ header nav ul li a {
 @media (max-width: 1024px) {
   #hero {
     height: 90vh;
+    background-image: none;
   }
 }
 #hero::before {
@@ -134,13 +140,6 @@ header nav ul li a {
   color: white;
   z-index: 1;
 }
-@media (max-width: 1024px) {
-  #hero #hero-content {
-    background-color: rgba(65, 67, 65, 0.7882352941);
-    padding: 20px;
-    border-radius: 15px;
-  }
-}
 #hero #hero-content h1 {
   font-size: 3rem;
 }
@@ -152,6 +151,11 @@ header nav ul li a {
 @media (max-width: 726px) {
   #hero #hero-content h1 {
     font-size: 3rem;
+  }
+}
+@media (max-width: 281px) {
+  #hero #hero-content h1 {
+    font-size: 2.4rem;
   }
 }
 #hero #hero-content .button {
@@ -260,6 +264,11 @@ header nav ul li a {
 @media (max-width: 726px) {
   #about #about-container #about-pics img {
     width: 90px;
+  }
+}
+@media (max-width: 281px) {
+  #about #about-container #about-pics img {
+    width: 75px;
   }
 }
 
@@ -488,6 +497,11 @@ header nav ul li a {
     text-align: center;
   }
 }
+@media (max-width: 281px) {
+  #projects a article p {
+    font-size: 0.95rem;
+  }
+}
 #projects a article .project-img {
   position: absolute;
   top: -3%;
@@ -702,6 +716,11 @@ footer img {
 }
 footer p {
   margin-top: 10px;
+}
+@media (max-width: 281px) {
+  footer p {
+    font-size: 0.7rem;
+  }
 }
 footer #social {
   margin-bottom: 10px;

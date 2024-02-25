@@ -32,6 +32,9 @@ footer {
     }
     p {
         margin-top: 10px;
+        @include fold {
+            font-size: 0.7rem;
+        }
     }
     #social {
         margin-bottom: 10px;

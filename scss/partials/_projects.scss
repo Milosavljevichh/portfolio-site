@@ -55,6 +55,9 @@
                     font-size: 1.1rem;
                     text-align: center;
                 }
+                @include fold {
+                    font-size: 0.95rem;
+                }
             }
             .project-img {
                 position: absolute;

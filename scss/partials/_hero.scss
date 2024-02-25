@@ -15,6 +15,7 @@
     justify-content: flex-start;
     @include tablet {
         height: 90vh;
+        background-image: none;
     }
     &::before {
         content: "";
@@ -32,12 +33,6 @@
         gap: 10px;
         color: white;
         z-index: 1;
-        @include tablet {
-            background-color: #414341c9;
-            padding: 20px;
-            border-radius: 15px;
-            
-        }
         h1 {
             font-size: 3rem;    
             @include tablet {
@@ -45,6 +40,9 @@
         }
         @include phone {
             font-size: 3rem;
+        }
+        @include fold {
+            font-size: 2.4rem;
         }
         }
         .button {
