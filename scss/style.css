@@ -334,6 +334,11 @@ header nav ul li a {
   overflow: hidden;
   position: relative;
 }
+@media (max-width: 726px) {
+  #logo-bar {
+    width: 90%;
+  }
+}
 #logo-bar div {
   display: flex;
   justify-content: space-around;
@@ -341,12 +346,13 @@ header nav ul li a {
 }
 #logo-bar div img {
   width: 200px;
-  animation: looping 3s infinite linear;
+  animation: looping 5s infinite linear;
   margin: 0 50px;
 }
 @media (max-width: 726px) {
   #logo-bar div img {
     width: 100px;
+    margin: 0 20px;
   }
 }
 
@@ -358,6 +364,12 @@ header nav ul li a {
   width: 180px;
   height: 200px;
   z-index: 2;
+}
+@media (max-width: 726px) {
+  #logo-bar::before,
+  #logo-bar::after {
+    width: 90px;
+  }
 }
 
 #logo-bar::before {
@@ -375,6 +387,16 @@ header nav ul li a {
   }
   100% {
     transform: translateX(-300%);
+  }
+}
+@media (max-width: 726px) {
+  @keyframes looping {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-280%);
+    }
   }
 }
 /* PROJECTS */
@@ -510,7 +532,7 @@ header nav ul li a {
 #contact-container #contact-links {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 @media (max-width: 1024px) {
   #contact-container #contact-links {
@@ -545,7 +567,7 @@ header nav ul li a {
 }
 
 #form {
-  margin: 80px 0;
+  margin: 50px 0;
 }
 #form form {
   padding: 3%;

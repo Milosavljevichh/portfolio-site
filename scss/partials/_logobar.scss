@@ -12,17 +12,20 @@
     flex-wrap: nowrap;
     overflow: hidden;
     position: relative;
-    
+    @include phone {
+        width: 90%;
+    }
     div {
         display: flex;
         justify-content: space-around;
         align-items: center;
         img {
             width: 200px;
-            animation: looping 3s infinite linear;
+            animation: looping 5s infinite linear;
             margin: 0 50px;
             @include phone {
                 width: 100px;
+                margin: 0 20px;
             }
         }
     }
@@ -35,6 +38,9 @@
     width: 180px;
     height: 200px;
     z-index: 2;
+    @include phone {
+        width: 90px;
+    }
 }
 #logo-bar::before {
     background: linear-gradient(266deg, rgba(10,10,10,0) 0%, rgba(8,9,8,1) 95%);
@@ -49,5 +55,15 @@ background: linear-gradient(100deg, rgba(10,10,10,0) 0%, rgba(8,9,8,1) 95%);
     }
     100% {
         transform: translateX(-300%)
+    }
+}
+@include phone {
+    @keyframes looping {
+        0% {
+            transform: translateX(0)
+        }
+        100% {
+            transform: translateX(-280%)
+        }
     }
 }
