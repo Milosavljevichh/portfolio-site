@@ -15,7 +15,9 @@
     justify-content: flex-start;
     @include tablet {
         height: 90vh;
-        background-image: none;
+        justify-content: center;
+        background-position: bottom right;
+        background-image: url(../imgs/vecto-tab.png);
     }
     &::before {
         content: "";
@@ -26,6 +28,9 @@
         width: 100%;
         height: 100%;
         background-color: #191a1946;
+        @include tablet {
+            background-color: #0f0f0fbe;
+        }
     }
     #hero-content{
         display: flex;
@@ -33,6 +38,19 @@
         gap: 10px;
         color: white;
         z-index: 1;
+        @include tablet {
+            background: rgba(15, 15, 15, 0.25);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5.8px);
+            -webkit-backdrop-filter: blur(5.8px);
+            padding: 40px;
+        }
+        @include phone {
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
         h1 {
             font-size: 3rem;    
             @include tablet {

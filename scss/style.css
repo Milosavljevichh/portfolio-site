@@ -120,7 +120,9 @@ header nav ul li a {
 @media (max-width: 1024px) {
   #hero {
     height: 90vh;
-    background-image: none;
+    justify-content: center;
+    background-position: bottom right;
+    background-image: url(../imgs/vecto-tab.png);
   }
 }
 #hero::before {
@@ -133,12 +135,34 @@ header nav ul li a {
   height: 100%;
   background-color: rgba(25, 26, 25, 0.2745098039);
 }
+@media (max-width: 1024px) {
+  #hero::before {
+    background-color: rgba(15, 15, 15, 0.7450980392);
+  }
+}
 #hero #hero-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
   color: white;
   z-index: 1;
+}
+@media (max-width: 1024px) {
+  #hero #hero-content {
+    background: rgba(15, 15, 15, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    padding: 40px;
+  }
+}
+@media (max-width: 726px) {
+  #hero #hero-content {
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 }
 #hero #hero-content h1 {
   font-size: 3rem;
