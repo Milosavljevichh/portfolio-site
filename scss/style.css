@@ -278,7 +278,7 @@ header nav ul li a {
 }
 #about #about-container #about-pics .grow {
   transform: scale(1.2);
-  filter: drop-shadow(1.5px 0px 3px rgba(255, 255, 255, 0.8588235294));
+  filter: drop-shadow(1.5px 0px 3px rgba(255, 255, 255, 0.5607843137));
 }
 #about #about-container #about-pics img {
   align-self: center;
